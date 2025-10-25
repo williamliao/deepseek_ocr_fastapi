@@ -66,6 +66,7 @@ conda activate deepseek-ocr
 
 ```bash
 pip install -r requirements.txt
+pip3 install --pre torch torchvision --index-url https://download.pytorch.org/whl/nightly/cu128
 ```
 
 #### 3. 設置環境變量
@@ -81,7 +82,7 @@ $env:DEEPSEEK_OCR_MODEL="deepseek-ai/DeepSeek-OCR"
 #### 4. 啟動服務
 
 ```bash
-uvicorn app.main:app --reload --port 8000
+uvicorn app.main:app --reload --port 8003
 ```
 
 ## 📡 API 使用方式
